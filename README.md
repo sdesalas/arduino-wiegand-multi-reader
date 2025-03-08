@@ -19,14 +19,14 @@ If you're using a newer ESP32 board make sure you replace `ICACHE_RAM_ATTR` belo
 #include "WiegandMultiReader.h"
 
 // Define Reader 1 (Card reader)
-WIEGAND cardReader();
+WIEGAND cardReader;
 int cardPinD0 = 5; // D1 (GPIO5) GREEN "D0"
 int cardPinD1 = 4; // D2 (GPIO4) WHITE "D1"
 void ICACHE_RAM_ATTR cardReadD0() { cardReader.ReadD0(); }
 void ICACHE_RAM_ATTR cardReadD1() { cardReader.ReadD1(); }
 
 // Define Reader 2 (Keypad)
-WIEGAND keypadReader();
+WIEGAND keypadReader;
 int keypadPinD0 = 12; // D6 (GPIO12) GREEN "D0"
 int keypadPinD1 = 13; // D7 (GPIO13) WHITE "D1"
 void ICACHE_RAM_ATTR keypadReadD0() { keypadReader.ReadD0(); }
