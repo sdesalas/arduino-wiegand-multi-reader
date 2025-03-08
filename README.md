@@ -1,4 +1,4 @@
-# ArduinoMultiReader.h
+# WiegandMultiReader.h
 
 A multi-reader library for Wiegand Access Devices, for Arduino _and_ ESP8266/ESP32.
 
