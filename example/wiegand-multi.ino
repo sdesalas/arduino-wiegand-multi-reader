@@ -36,7 +36,7 @@
 #include "../WiegandMultiReader.h"
 
 // Define Reader 1 (Card reader)
-WIEGAND cardReader();
+WIEGAND cardReader;
 int cardPinD0 = 5; // D1 (GPIO5) GREEN "D0"
 int cardPinD1 = 4; // D2 (GPIO4) WHITE "D1"
 int cardStatusLED = 0; // D3 (GPIO0) STATUS LED --> ON = OK
@@ -48,7 +48,7 @@ void ICACHE_RAM_ATTR cardReadD1() {
 }
 
 // Define Reader 2 (Keypad)
-WIEGAND keypadReader();
+WIEGAND keypadReader;
 int keypadPinD0 = 12; // D6 (GPIO12) GREEN "D0"
 int keypadPinD1 = 13; // D7 (GPIO13) WHITE "D1"
 int keypadStatusLED = 14; // D5 (GPIO14) STATUS LED --> ON = OK
